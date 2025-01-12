@@ -1,0 +1,204 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f4f7fc;
+}
+.body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.main {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+.card {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.titles {
+  text-align: center;
+  margin-bottom: 20px;
+  gap: 100px;
+  line-height: 1.9;
+}
+.titles h4 {
+  font-size: 22px;
+  color: #333;
+}
+.titles p {
+  font-size: 14px;
+  color: #666;
+}
+label {
+  font-weight: 500;
+  color: #333;
+}
+input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.activity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.activity div {
+  flex: 1;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.coffe {
+  background-color: #007bff;
+}
+.food {
+  background-color: #28a745;
+}
+.shopping {
+  background-color: #ffc107;
+}
+.coffe:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+.food:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+.shopping:hover {
+  background-color: #e0a800;
+  transform: scale(1.02);
+}
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+.output {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.entry {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.date-emojis-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.date-note {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.date {
+  font-weight: 500;
+  color: #333;
+}
+.note {
+  color: #666;
+  font-size: 13px;
+}
+.amount-delete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.amount {
+  font-weight: 500;
+  color: #28a745;
+}
+#emoji {
+  width: 20px;
+}
+svg {
+  cursor: pointer;
+}
+svg:hover {
+  transform: scale(1.1);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+  }
+  .activity {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .activity div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+  }
+  .activity {
+    gap: 5px;
+  }
+  .activity div {
+    font-size: 13px;
+  }
+}
